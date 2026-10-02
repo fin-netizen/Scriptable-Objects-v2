@@ -15,9 +15,6 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
          
-        playerData.Health = 5;
-        playerData.Score = 0;
-        playerData.Lives = 3;
 
     }
 
