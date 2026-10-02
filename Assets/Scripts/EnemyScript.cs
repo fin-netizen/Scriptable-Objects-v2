@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class EnemyScript : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Keyboard.current.equalsKey.wasPressedThisFrame)
+        {
+            playerData.Health++;
+        }
+        if (Keyboard.current.minusKey.wasPressedThisFrame)
+        {
+            playerData.Health--;
+        }
     }
 }
